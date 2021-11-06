@@ -163,6 +163,8 @@
     <ClCompile Include="23 赋值、关系、函数运算符重载.cpp" />
     <ClCompile Include="24 继承.cpp" />
     <ClCompile Include="25 多继承.cpp" />
+    <ClCompile Include="26 多态.cpp" />
+    <ClCompile Include="27.cpp" />
     <ClCompile Include="circle.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="swap.cpp" />

@@ -96,6 +96,12 @@
     <ClCompile Include="25 多继承.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="26 多态.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="27.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">

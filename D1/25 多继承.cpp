@@ -38,7 +38,7 @@ public:
 };
 
 
-int main() {
+int main25() {
 	cout << sizeof(Base1) << endl;
 
 	Son s;
