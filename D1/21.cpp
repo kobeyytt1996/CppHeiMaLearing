@@ -51,7 +51,7 @@ void goodGay(const Building& building) {
 	cout << building.b << endl;
 }
 
-int main() {
+int main21() {
 	Building b;
 	goodGay(b);
 
