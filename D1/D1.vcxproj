@@ -160,6 +160,7 @@
     <ClCompile Include="20.cpp" />
     <ClCompile Include="21.cpp" />
     <ClCompile Include="22.cpp" />
+    <ClCompile Include="23.cpp" />
     <ClCompile Include="circle.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="swap.cpp" />

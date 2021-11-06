@@ -64,7 +64,7 @@ ostream& operator<<(ostream& cout, const Kobe& k) {
 }
 
 
-int main() {
+int main22() {
 
 	Kobe a(30, 40, 10);
 	Kobe b(40, 70, 10);
