@@ -69,7 +69,7 @@ public:
 // cd 绝对路径
 // cl /d1 reportSingleClassLayout类名 源文件名
 // e.g. cl /d1 reportSingleClassLayoutPython "24 继承.cpp"
-int main() {
+int main24() {
 	Java p;
 	p.content();
 	

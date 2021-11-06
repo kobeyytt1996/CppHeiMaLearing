@@ -84,13 +84,16 @@
     <ClCompile Include="21.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="22.cpp">
+    <ClCompile Include="22 运算符重载.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="23 赋值、关系、函数运算符重载.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="24 继承.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="25 多继承.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
