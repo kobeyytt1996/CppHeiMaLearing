@@ -42,7 +42,7 @@ public:
 	}
 };
 
-int main() {
+int main23() {
 	Green p1(180);
 	Green p2(200);
 	Green p3(3200);
