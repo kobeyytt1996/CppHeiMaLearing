@@ -15,7 +15,7 @@ using namespace std;
 class Animal {
 public:
 	// 虚函数实现运行时确定函数
-	// 不加virtual时，Animal对象的size是1字节，加了以后是4字节，多了指针:vfptr,即虚函数(表)指针，指向vftable,虚函数表
+	// 不加virtual时，Animal对象的size是1字节，加了以后是4字节，多了指针:vfptr,即虚函数(表)指针，指向vftable,虚函数表.(f指function)
 	// 表内记录虚函数的地址
 	virtual void speak() const {
 		cout << "动物说" << endl;

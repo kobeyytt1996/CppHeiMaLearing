@@ -78,10 +78,10 @@
     <ClCompile Include="19.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="20.cpp">
+    <ClCompile Include="20 常函数和常对象.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="21.cpp">
+    <ClCompile Include="21 友元.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="22 运算符重载.cpp">
@@ -99,7 +99,7 @@
     <ClCompile Include="26 多态.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="27.cpp">
+    <ClCompile Include="27 纯虚函数和虚析构.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
