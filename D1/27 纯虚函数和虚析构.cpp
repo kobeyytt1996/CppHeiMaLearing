@@ -46,14 +46,11 @@ public:
 	}
 };
 
-int main() {
+int main27() {
 	
 	AbstractBase* ab = new Son("ha");
 	// 父类指针在析构时候，不会调用子类中析构函数，导致子类如果有堆区指针，出现内存泄漏情况
 	delete ab;
-
-	Computer com(new LenovoCPU());
-	com.work();
 
 	return 0;
 }

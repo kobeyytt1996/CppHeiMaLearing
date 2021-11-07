@@ -165,6 +165,7 @@
     <ClCompile Include="25 多继承.cpp" />
     <ClCompile Include="26 多态.cpp" />
     <ClCompile Include="27 纯虚函数和虚析构.cpp" />
+    <ClCompile Include="28 文件操作.cpp" />
     <ClCompile Include="circle.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="swap.cpp" />

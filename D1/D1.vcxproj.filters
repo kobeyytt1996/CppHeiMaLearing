@@ -102,6 +102,9 @@
     <ClCompile Include="27 纯虚函数和虚析构.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="28 文件操作.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">
