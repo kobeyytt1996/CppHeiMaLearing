@@ -18,7 +18,7 @@ public:
 	char m_Name[64];
 };
 
-int main() {
+int main28() {
 	// 1. 包含头文件
 	// 2. 创建流对象
 	ofstream ofs;
@@ -39,6 +39,7 @@ int main() {
 	// 因为没有该文件等原因，可能打开失败
 	if (ifs.is_open()) {
 		// 读数据有多种方式：1.
+		// 如果这里m_Name为string类型，可能把m_Name cout的时候会出现乱码，应该打开txt文件，另存为，编码格式选ANSI，之后就好了
 		/*char buf[1024] = { 0 };
 		while (ifs >> buf)
 		{
@@ -65,6 +66,10 @@ int main() {
 		}
 
 		ifs.close();
+	}
+	else {
+		// 无论从哪个函数调用，都相当于在main里调用return 0
+		exit(0);
 	}
 
 	// 二进制文件：可用于把对象变二进制写出再读入成对象
