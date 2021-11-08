@@ -62,6 +62,9 @@ void WorkerManager::exitSystem() {
 
 WorkerManager::~WorkerManager() {
 	if (m_WorkerArray != NULL) {
+		for (int i = 0; i < m_WorkerNum; ++i) {
+			delete m_WorkerArray[i];
+		}
 		delete[] m_WorkerArray;
 		m_WorkerArray = NULL;
 	}
@@ -186,5 +189,135 @@ void WorkerManager::showWorker() {
 }
 
 int WorkerManager::getWorker(int id) {
+	for (int i = 0; i < m_WorkerNum; ++i) {
+		if (m_WorkerArray[i]->m_ID == id) {
+			return i;
+		}
+	}
 
+	return -1;
+}
+
+void WorkerManager::delWorker() {
+	if (m_WorkerNum <= 0) {
+		cout << "还没有职工" << endl;
+		return;
+	}
+	else
+	{
+		int delNum;
+		cout << "编号：" << endl;
+		cin >> delNum;
+		int index = getWorker(delNum);
+
+		if (index == -1) {
+			cout << "该职工不存在" << endl;
+		}
+		else {
+			delete m_WorkerArray[index];
+			for (int i = index; i < m_WorkerNum - 1; ++i) {
+				m_WorkerArray[i] = m_WorkerArray[i + 1];
+			}
+
+			m_WorkerNum--;
+			m_WorkerArray[m_WorkerNum] = NULL;
+
+			if (m_WorkerNum == 0) {
+				m_FileIsEmpty = true;
+			}
+
+			save();
+			cout << "已成功删除" << endl;
+		}
+	}
+}
+
+void WorkerManager::modWorker() {
+	if (m_WorkerNum <= 0) {
+		cout << "还没有职工" << endl;
+		return;
+	}
+	else
+	{
+		int modNum;
+		cout << "编号：" << endl;
+		cin >> modNum;
+		int index = getWorker(modNum);
+
+		if (index == -1) {
+			cout << "该职工不存在" << endl;
+		}
+		else {
+			delete m_WorkerArray[index];
+			int id;
+			string name;
+			int title;
+
+			cout << "姓名" << endl;
+			cin >> name;
+			cout << "编号" << endl;
+			cin >> id;
+			cout << "职位" << endl;
+			cin >> title;
+
+			if (title == 1) {
+				m_WorkerArray[index] = new Employee(id, name, title);
+			}
+			else {
+				m_WorkerArray[index] = new Boss(id, name, title);
+			}
+
+			save();
+			cout << "已成功修改" << endl;
+		}
+	}
+}
+
+void WorkerManager::sortWorker() {
+	if (m_WorkerNum <= 0) {
+		cout << "还没有职工" << endl;
+		return;
+	}
+	else {
+		// 选择排序
+		int maxTemp, maxTempIndex;
+		for (int i = 0; i < m_WorkerNum; ++i) {
+			maxTempIndex = i;
+			maxTemp = m_WorkerArray[i]->m_ID;
+			for (int j = i + 1; j < m_WorkerNum; ++j) {
+				if (m_WorkerArray[j]->m_ID > maxTemp) {
+					maxTemp = m_WorkerArray[j]->m_ID;
+					maxTempIndex = j;
+				}
+			}
+
+			if (maxTempIndex != i) {
+				Worker* temp = m_WorkerArray[i];
+				m_WorkerArray[i] = m_WorkerArray[maxTempIndex];
+				m_WorkerArray[maxTempIndex] = temp;
+			}
+		}
+
+
+		save();
+		cout << "已成功排序" << endl;
+	}
+}
+
+void WorkerManager::clearData() {
+	if (m_WorkerNum > 0) {
+		ofstream ofs(FILENAME, ios::trunc);
+		ofs.close();
+
+		for (int i = 0; i < m_WorkerNum; ++i) {
+			delete m_WorkerArray[i];
+		}
+		m_WorkerNum = 0;
+		delete[] m_WorkerArray;
+		m_WorkerArray = NULL;
+		m_FileIsEmpty = true;
+		
+		cout << "已清空" << endl;
+	}
+	
 }

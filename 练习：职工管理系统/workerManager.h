@@ -32,4 +32,10 @@ public:
 	int getWorker(int id);
 
 	void delWorker();
+
+	void modWorker();
+
+	void sortWorker();
+
+	void clearData();
 };

@@ -23,14 +23,18 @@ int main() {
 			wm.showWorker();
 			break;
 		case 3:
+			wm.delWorker();
 			break;
 		case 4:
+			wm.modWorker();
 			break;
 		case 5:
 			break;
 		case 6:
+			wm.sortWorker();
 			break;
 		case 7:
+			wm.clearData();
 			break;
 		default:
 			break;
