@@ -5,7 +5,7 @@
 using namespace std;
 
 
-int main() {
+int mainZhigong() {
 	WorkerManager wm;
 	int select;
 	while (true) {
