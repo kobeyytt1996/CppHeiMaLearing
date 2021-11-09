@@ -28,7 +28,8 @@ Person<T1, T2>::Person(T1 name, T2 age) {
 	m_Age = age;
 }
 
-// 类模板对象作函数参数: 1. 指定传入类型: 最常用
+// 类模板对象作函数参数: 
+// 1. 指定传入类型: 最常用
 void printPerson(Person<string, int>& p) {
 	p.showPerson();
 }

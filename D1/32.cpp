@@ -2,8 +2,9 @@
 #include <string>
 using namespace std;
 
+// stl
+
 int main() {
 
-
-	return 0;
+	
 }
