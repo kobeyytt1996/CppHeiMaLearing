@@ -111,6 +111,15 @@
     <ClCompile Include="30 类模板.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="31 类模板2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">
@@ -121,6 +130,12 @@
     </ClInclude>
     <ClInclude Include="Circle.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyArray.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

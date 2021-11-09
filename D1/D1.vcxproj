@@ -168,12 +168,17 @@
     <ClCompile Include="28 文件操作.cpp" />
     <ClCompile Include="29 函数模板.cpp" />
     <ClCompile Include="30 类模板.cpp" />
+    <ClCompile Include="31 类模板2.cpp" />
+    <ClCompile Include="32.cpp" />
     <ClCompile Include="circle.cpp" />
+    <ClCompile Include="Person.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="swap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="MyArray.hpp" />
+    <ClInclude Include="Person.hpp" />
     <ClInclude Include="point.h" />
     <ClInclude Include="swap.h" />
   </ItemGroup>
