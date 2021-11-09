@@ -169,7 +169,8 @@
     <ClCompile Include="29 函数模板.cpp" />
     <ClCompile Include="30 类模板.cpp" />
     <ClCompile Include="31 类模板2.cpp" />
-    <ClCompile Include="32.cpp" />
+    <ClCompile Include="32 STL之vector.cpp" />
+    <ClCompile Include="33 string.cpp" />
     <ClCompile Include="circle.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="point.cpp" />
