@@ -123,6 +123,12 @@
     <ClCompile Include="33 string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="34 vector更多.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="35 deque.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">

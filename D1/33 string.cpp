@@ -4,7 +4,7 @@ using namespace std;
 
 // string：本质上是个类，内部封装了char*，管理这个字符串
 
-int main() {
+int main33() {
 	// 初始化方式：1.
 	string s1;
 	cout << s1 << endl;
