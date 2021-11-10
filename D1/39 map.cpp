@@ -21,14 +21,14 @@ void printMap(const map<int, string>& m) {
 	}
 }
 
-int main() {
+int main39() {
 	map<int, string> m1;
 	map<int, string> m2(m1);
 
 	m1.insert(pair<int, string>(10, "yy"));
 	m1.insert(make_pair(20, "zz"));
 	m1.insert(map<int, string>::value_type(15, "kk"));
-	// []不建议插入，更多用于确定存在该key时，取value。
+	// []不建议用于插入，更多用于确定存在该key时，取value。
 	m1[5] = "ff";
 
 	// 大小和交换
