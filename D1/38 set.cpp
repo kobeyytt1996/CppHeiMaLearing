@@ -25,15 +25,15 @@ public:
 	string m_Name;
 };
 
-class MyCompare39 {
+class MyCompare381 {
 public:
 	bool operator()(const Teacher38& t1, const Teacher38& t2) const {
 		return (t1.m_Name.compare(t2.m_Name) == 1) ? true : false;
 	}
 };
 
-void printSet(set<Teacher38, MyCompare39>& s) {
-	for (set<Teacher38, MyCompare39>::iterator it = s.begin(); it != s.end(); ++it) {
+void printSet(set<Teacher38, MyCompare381>& s) {
+	for (set<Teacher38, MyCompare381>::iterator it = s.begin(); it != s.end(); ++it) {
 		cout << it->m_Name << " ";
 	}
 	cout << endl;
@@ -86,7 +86,7 @@ int main38() {
 	s4.insert(20);
 
 	// 如果存的是自定义数据类型，所以必须指定仿函数
-	set<Teacher38, MyCompare39> s50;
+	set<Teacher38, MyCompare381> s50;
 	s50.insert(Teacher38("yy")); 
 	s50.insert(Teacher38("zz"));
 

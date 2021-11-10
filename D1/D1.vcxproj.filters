@@ -138,6 +138,9 @@
     <ClCompile Include="38 set.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="39 map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">
