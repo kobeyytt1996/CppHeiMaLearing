@@ -129,6 +129,12 @@
     <ClCompile Include="35 deque.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="36 stack和queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="37 链表list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">

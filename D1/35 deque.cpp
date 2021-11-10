@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <deque>
+#include <algorithm>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ void printDeque(const deque<int>& d) {
 	cout << endl;
 }
 
-int main() {
+int main35() {
 
 	// 构造：
 	deque<int> d1;
@@ -46,6 +47,13 @@ int main() {
 	d1.clear();
 
 	d1.assign(6, 60);
+
+	// 数据存取
+	d1[0] = 20;
+	d1.at(1) = 10;
+
+	// deque排序: sort默认升序。对于支持随机访问的迭代器的容器，都可以用sort，如vector、deque等
+	sort(d1.begin(), d1.end());
 
 	printDeque(d1);
 

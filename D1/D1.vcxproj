@@ -173,6 +173,8 @@
     <ClCompile Include="33 string.cpp" />
     <ClCompile Include="34 vector更多.cpp" />
     <ClCompile Include="35 deque.cpp" />
+    <ClCompile Include="36 stack和queue.cpp" />
+    <ClCompile Include="37 链表list.cpp" />
     <ClCompile Include="circle.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="point.cpp" />
