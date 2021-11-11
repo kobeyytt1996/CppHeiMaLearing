@@ -178,7 +178,8 @@
     <ClCompile Include="38 set.cpp" />
     <ClCompile Include="39 map.cpp" />
     <ClCompile Include="40 函数对象.cpp" />
-    <ClCompile Include="41.cpp" />
+    <ClCompile Include="41 常用遍历查找排序拷贝和替换算法.cpp" />
+    <ClCompile Include="42 常用算术生成算法和集合算法.cpp" />
     <ClCompile Include="circle.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="point.cpp" />

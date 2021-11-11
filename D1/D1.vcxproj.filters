@@ -144,7 +144,10 @@
     <ClCompile Include="40 函数对象.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="41.cpp">
+    <ClCompile Include="41 常用遍历查找排序拷贝和替换算法.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="42 常用算术生成算法和集合算法.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
