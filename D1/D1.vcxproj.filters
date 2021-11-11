@@ -141,7 +141,10 @@
     <ClCompile Include="39 map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="40.cpp">
+    <ClCompile Include="40 函数对象.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="41.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
