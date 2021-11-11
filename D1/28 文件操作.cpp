@@ -94,7 +94,22 @@ int main28() {
 		ifs1.close();
 	}
 	
+	// 判断文件是否为空
+	char ch;
+	ifstream ifs2("person.txt", ios::in);
+	ifs2 >> ch;
+	if (ifs2.is_open()) {
+		// 如果为true，说明该文件为空
+		if (ifs2.eof()) {
 
+		}
+		else
+		{
+			// 读取的单个字符放回去
+			ifs2.putback(ch);
+		}
+		ifs2.close();
+	}
 
 	return 0;
 }
