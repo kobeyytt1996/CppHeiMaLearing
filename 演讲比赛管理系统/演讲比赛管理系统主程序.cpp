@@ -3,7 +3,7 @@ using namespace std;
 #include "GameManager.h"
 #include <ctime>
 
-int main() {
+int mainSpeech() {
 	GameManager gm;
 
 	int choice;

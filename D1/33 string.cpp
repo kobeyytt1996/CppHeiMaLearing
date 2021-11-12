@@ -65,6 +65,9 @@ int main33() {
 	s4.substr(1, 3);
 
 
+	// string转int，先转成c语言风格字符串，再调用atoi
+	atoi(s4.c_str());
+
 	cout << s4 << endl;
 	cout << s4.substr(1, 3) << endl;
 	return 0;

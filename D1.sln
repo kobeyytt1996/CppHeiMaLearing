@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "练习：职工管理系统
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "演讲比赛管理系统", "演讲比赛管理系统\演讲比赛管理系统.vcxproj", "{35412BD5-2034-4D36-919B-53C4A1D00AED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "练习 机房预约系统", "练习 机房预约系统\练习 机房预约系统.vcxproj", "{C22F611F-995F-4E08-880F-A5AE592EF449}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{35412BD5-2034-4D36-919B-53C4A1D00AED}.Release|x64.Build.0 = Release|x64
 		{35412BD5-2034-4D36-919B-53C4A1D00AED}.Release|x86.ActiveCfg = Release|Win32
 		{35412BD5-2034-4D36-919B-53C4A1D00AED}.Release|x86.Build.0 = Release|Win32
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Debug|x64.ActiveCfg = Debug|x64
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Debug|x64.Build.0 = Debug|x64
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Debug|x86.ActiveCfg = Debug|Win32
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Debug|x86.Build.0 = Debug|Win32
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Release|x64.ActiveCfg = Release|x64
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Release|x64.Build.0 = Release|x64
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Release|x86.ActiveCfg = Release|Win32
+		{C22F611F-995F-4E08-880F-A5AE592EF449}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
