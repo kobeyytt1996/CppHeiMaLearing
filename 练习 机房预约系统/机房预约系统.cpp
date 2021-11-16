@@ -167,7 +167,7 @@ void loginIn(string fileName, int type) {
 	ifs.close();
 }
 
-int main() {
+int mainComputer() {
 	int choice = 0;
 	while (true) {
 		cout << "1. Ñ§Éú" << endl;

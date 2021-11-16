@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b5df9096-5058-4adf-a1cd-3368d639d65e}</ProjectGuid>
-    <RootNamespace>D1</RootNamespace>
+    <ProjectGuid>{dc6604ee-38fa-4899-b919-2b9b637bcc78}</ProjectGuid>
+    <RootNamespace>Cprimer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>黑马课程内容</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,58 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="01 数据类型.cpp" />
-    <ClCompile Include="02 运算符.cpp" />
-    <ClCompile Include="04 循环.cpp" />
-    <ClCompile Include="05 goto.cpp" />
-    <ClCompile Include="06 数组.cpp" />
-    <ClCompile Include="07 函数值传递.cpp" />
-    <ClCompile Include="08 函数声明和定义.cpp" />
-    <ClCompile Include="09 指针.cpp" />
-    <ClCompile Include="10 结构体.cpp" />
-    <ClCompile Include="11 内存分区模型.cpp" />
-    <ClCompile Include="12 引用.cpp" />
-    <ClCompile Include="13 函数默认参数和占位参数.cpp" />
-    <ClCompile Include="14 函数重载.cpp" />
-    <ClCompile Include="15 封装.cpp" />
-    <ClCompile Include="16 构造函数和析构函数.cpp" />
-    <ClCompile Include="17 浅拷贝和深拷贝.cpp" />
-    <ClCompile Include="18 静态成员.cpp" />
-    <ClCompile Include="19 对象模型和this指针.cpp" />
-    <ClCompile Include="20 常函数和常对象.cpp" />
-    <ClCompile Include="21 友元.cpp" />
-    <ClCompile Include="22 运算符重载.cpp" />
-    <ClCompile Include="23 赋值、关系、函数运算符重载.cpp" />
-    <ClCompile Include="24 继承.cpp" />
-    <ClCompile Include="25 多继承.cpp" />
-    <ClCompile Include="26 多态.cpp" />
-    <ClCompile Include="27 纯虚函数和虚析构.cpp" />
-    <ClCompile Include="28 文件操作.cpp" />
-    <ClCompile Include="29 函数模板.cpp" />
-    <ClCompile Include="30 类模板.cpp" />
-    <ClCompile Include="31 类模板2.cpp" />
-    <ClCompile Include="32 STL之vector.cpp" />
-    <ClCompile Include="33 string.cpp" />
-    <ClCompile Include="34 vector更多.cpp" />
-    <ClCompile Include="35 deque.cpp" />
-    <ClCompile Include="36 stack和queue.cpp" />
-    <ClCompile Include="37 链表list.cpp" />
-    <ClCompile Include="38 set.cpp" />
-    <ClCompile Include="39 map.cpp" />
-    <ClCompile Include="40 函数对象.cpp" />
-    <ClCompile Include="41 常用遍历查找排序拷贝和替换算法.cpp" />
-    <ClCompile Include="42 常用算术生成算法和集合算法.cpp" />
-    <ClCompile Include="circle.cpp" />
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="point.cpp" />
-    <ClCompile Include="swap.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="MyArray.hpp" />
-    <ClInclude Include="Person.hpp" />
-    <ClInclude Include="point.h" />
-    <ClInclude Include="swap.h" />
+    <ClCompile Include="chapter1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
