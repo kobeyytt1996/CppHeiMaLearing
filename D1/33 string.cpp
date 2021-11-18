@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+using std::cin;
 
 // string：本质上是个类，内部封装了char*，管理这个字符串
 
