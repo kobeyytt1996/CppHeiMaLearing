@@ -21,7 +21,7 @@
     <ClCompile Include="chapter3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="chapter4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
