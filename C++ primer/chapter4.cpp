@@ -2,7 +2,7 @@
 using namespace std;
 #include <vector>
 
-int main() {
+int main04() {
 	int i = 0;
 	cout << ++i << " " << ++i << endl;
 
@@ -32,21 +32,21 @@ int main() {
 
 	cout << d1 << endl;
 
-	int* ip;
-	char cp = reinterpret_cast<char>(ip);
+	/*int* ip;
+	char cp = reinterpret_cast<char>(ip);*/
 
 	int i3 = 10;
 	double d3 = 20.0;
 
 	i3 *= static_cast<int>(d3);
 
-	const string* ps;
+	/*const string* ps;
 	void* pv;
 
 	pv = static_cast<void*>(const_cast<string*>(ps));
 	char* pc;
 
 	i3 = static_cast<int>(*pc);
-	pv = static_cast<void*>(&d3);
+	pv = static_cast<void*>(&d3);*/
 	return 0;
 }
