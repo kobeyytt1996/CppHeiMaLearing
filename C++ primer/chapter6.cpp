@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cassert>
 using namespace std;
 
 void func(void) {
@@ -81,8 +82,13 @@ string screen(sst height = 10, sst weight = 20) {
 	return " ";
 }
 
+#define NDEBUG
+
 sst wd = 20;
 string screen1(sst = wd) {
+#ifndef NDEBUG
+	cerr << __func__ << endl;
+#endif // !NDEBUG
 	return " ";
 }
 
@@ -90,11 +96,16 @@ constexpr int new_sz() {
 	return 42;
 }
 
-constexpr int scale(size_t st) {
+constexpr size_t scale(size_t st) {
+
 	return new_sz() * st;
 }
 
 constexpr int sz = new_sz();
+
+int add(int i1, int i2) {
+	return i1 + i2;
+}
 
 int main(int argc, char *argv[]) {
 	func();
@@ -112,6 +123,27 @@ int main(int argc, char *argv[]) {
 
 	typedef int arrT[10];
 	using arrT1 = int[10];
+
+	assert(arr[0] >= 0);
+	//scale(2);
+	screen1();
+
+	vector<string>(*pf)() = &process;
+	vector<string> vs1 = pf();
+
+	typedef int (*intFunc)(int, int);
+	using intFunc1 = int(*)(int, int);
+	intFunc1 func4();
+	intFunc1 func5(int(int, int));
+	intFunc1 func6(intFunc1);
+	auto func7() -> int(*)(int, int);
+	int(*func8())(int);
+	decltype(func4) * func9();
+
+	int (*test1)(int, int) = add;
+	vector<int (*)(int, int)> vt1;
+	vt1.push_back(test1);
+	cout << vt1[0](10, 20) << endl;
 
 	return EXIT_SUCCESS;
 }
