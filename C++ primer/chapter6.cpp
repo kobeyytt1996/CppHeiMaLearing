@@ -107,7 +107,7 @@ int add(int i1, int i2) {
 	return i1 + i2;
 }
 
-int main(int argc, char *argv[]) {
+int main06(int argc, char *argv[]) {
 	func();
 	func();
 
