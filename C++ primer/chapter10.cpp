@@ -5,6 +5,8 @@
 #include <string>
 #include <iterator>
 #include <functional>
+#include <list>
+#include <fstream>
 using namespace std;
 using namespace std::placeholders;
 
@@ -12,7 +14,16 @@ bool check_size(const string& s, string::size_type sz) {
 	return s.size() >= sz;
 }
 
-int main() {
+bool check_numSize(int i, string::size_type sz) {
+	return i >= sz;
+}
+
+ostream& myPrint(ostream& os, const string& s, char c) {
+	os << s << c;
+	return os;
+}
+
+int main10() {
 	vector<int> vi{ 1, 3, 2 };
 	auto res = find(vi.cbegin(), vi.cend(), 2);
 	int ia[] = { 1, 3, 5 };
@@ -85,6 +96,48 @@ int main() {
 	cout << f4() << endl;
 
 	auto f5 = bind(check_size, _1, 6);
+	auto f6 = bind(check_size, _2, _1);
+
+	auto f7 = bind(myPrint, ref(cout), _1, 'a');
+	f7("ss");
+
+	string s3 = "Yuan";
+	find_if(vi.cbegin(), vi.cend(), bind(check_size, ref(s3), _1));
+
+	inserter(vi, vi.begin());
+	front_inserter(vi);
+
+	list<int> li3;
+	unique_copy(vi.begin(), vi.end(), back_inserter(li3));
+
+	istream_iterator<int> eof_iter;
+	//istream_iterator<int> iiiter(cin);
+	ostream_iterator<int> oiiter(cout, " ");
+	
+	copy(vi.cbegin(), vi.cend(), oiiter);
+	cout << endl;
+
+	ifstream ifs("a.txt");
+	istream_iterator<string> iter1(ifs);
+	istream_iterator<string> eof_str;
+	vector<string> vs3;
+	copy(iter1, eof_str, back_inserter(vs3));
+	ostream_iterator<string> oiiter1(cout, " ");
+	copy(vs3.cbegin(), vs3.cend(), oiiter1);
+	cout << endl;
+
+	sort(vi.rbegin(), vi.rend());
+
+	string s5 = "a,aa,abc";
+	auto comma = find(s5.crbegin(), s5.crend(), ',');
+	cout << string(comma.base(), s5.cend()) << endl;
+
+	list<string> li{ "aa", "bb", "aa" };
+	li.sort();
+	li.unique();
+	ostream_iterator<string> oiter3(cout, " ");
+	copy(li.cbegin(), li.cend(), oiter3);
+	cout << endl;
 
 	return EXIT_SUCCESS;
 }
