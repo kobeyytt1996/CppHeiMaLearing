@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="chapter1.cpp" />
     <ClCompile Include="chapter10.cpp" />
+    <ClCompile Include="chapter11.cpp" />
     <ClCompile Include="chapter3.cpp" />
     <ClCompile Include="chapter4.cpp" />
     <ClCompile Include="chapter5.cpp" />
