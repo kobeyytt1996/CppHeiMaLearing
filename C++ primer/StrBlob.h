@@ -12,6 +12,13 @@ public:
 	StrBlob();
 	StrBlob(initializer_list<string> il_str);
 
+	StrBlob(const StrBlob &sb) : data(make_shared<vector<string>>(*(sb.data))) {}
+
+	StrBlob& operator=(const StrBlob& sb) {
+		data = make_shared<vector<string>>(*sb.data);
+		return *this;
+	}
+
 	bool empty() { return data->empty(); }
 	bool size() { return data->size(); }
 

@@ -24,7 +24,7 @@ void print(vector<int>* vi) {
 	cout << endl;
 }
 
-int main() {
+int main12() {
 	shared_ptr<string> sp1;
 	if (sp1 && sp1->empty()) {
 		*sp1 = "Hello";
