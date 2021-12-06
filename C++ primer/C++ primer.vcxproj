@@ -156,6 +156,7 @@
     <ClCompile Include="StrBlobPtr.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Message.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Screen.h" />
     <ClInclude Include="StrBlob.h" />

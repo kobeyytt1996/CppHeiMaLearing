@@ -23,6 +23,8 @@ public:
 	bool size() { return data->size(); }
 
 	void push_back(const string& s) { data->push_back(s); }
+
+	void push_back(string&& s) { data->push_back(std::move(s)); }
 	void pop_back();
 
 	string& front();
