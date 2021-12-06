@@ -150,6 +150,13 @@ public:
 	string* begin() const { return elements; }
 	string* end() const { return first_free; }
 
+	string& operator[](size_t s) {
+		return *(elements + s);
+	}
+
+	const string& operator[](size_t s) const {
+		return *(elements + s);
+	}
 private:
 	static allocator<string> alloc;
 	void free() {
