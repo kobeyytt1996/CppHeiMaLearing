@@ -145,6 +145,7 @@
     <ClCompile Include="chapter12.cpp" />
     <ClCompile Include="chapter13.cpp" />
     <ClCompile Include="chapter14.cpp" />
+    <ClCompile Include="chapter15.cpp" />
     <ClCompile Include="chapter3.cpp" />
     <ClCompile Include="chapter4.cpp" />
     <ClCompile Include="chapter5.cpp" />
@@ -159,6 +160,7 @@
   <ItemGroup>
     <ClInclude Include="Message.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Quote.h" />
     <ClInclude Include="Sales_data.h" />
     <ClInclude Include="Screen.h" />
     <ClInclude Include="StrBlob.h" />
