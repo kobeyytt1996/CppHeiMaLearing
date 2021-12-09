@@ -66,6 +66,9 @@
     <ClCompile Include="chapter15.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TextQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person.h">
@@ -87,6 +90,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Quote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\13718\Downloads\VisualStudio2012\6\make_plural.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Query_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Query.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

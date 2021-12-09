@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 #include "Quote.h"
+#include <vector>
+#include "Query.h"
 
 struct B {
 	virtual void f1(int) const;
@@ -54,7 +56,12 @@ int main() {
 	Bulk_quote* bqp = static_cast<Bulk_quote*>(qp);
 	bqp->Quote::net_price(5);
 	
-	
+	vector<shared_ptr<Quote>> vsq;
+	vsq.push_back(make_shared<Quote>());
+	vsq.push_back(make_shared<Bulk_quote>());
+
+	Query q = string("yuan");
+	//~q;
 
 	return EXIT_SUCCESS;
 }
