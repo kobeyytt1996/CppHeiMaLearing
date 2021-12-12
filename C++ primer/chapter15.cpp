@@ -2,7 +2,8 @@
 using namespace std;
 #include "Quote.h"
 #include <vector>
-#include "Query.h"
+#include <functional>
+
 
 struct B {
 	virtual void f1(int) const;
@@ -44,7 +45,7 @@ public:
 	using Base::size;
 };
 
-int main() {
+int main15() {
 	Bulk_quote bq;
 	Quote& qr = bq;
 	Quote* qp = &bq;
@@ -60,7 +61,7 @@ int main() {
 	vsq.push_back(make_shared<Quote>());
 	vsq.push_back(make_shared<Bulk_quote>());
 
-	Query q = string("yuan");
+	//Query q = string("yuan");
 	//~q;
 
 	return EXIT_SUCCESS;
