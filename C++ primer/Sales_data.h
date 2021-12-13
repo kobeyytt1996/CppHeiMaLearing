@@ -2,7 +2,10 @@
 #include <iostream>
 using namespace std;
 
+template<typename T> class std::hash;
+
 class Sales_data {
+	friend class std::hash<Sales_data>;
 public:
 	Sales_data(int unit = 0) : units_sold(unit) {}
 

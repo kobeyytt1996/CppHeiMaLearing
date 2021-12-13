@@ -157,6 +157,11 @@ public:
 	const string& operator[](size_t s) const {
 		return *(elements + s);
 	}
+
+	template<typename...Args>
+	void emplace_back(Args&&... args) {
+		alloc.construct(first_free++, std::forward<Args>(args)...);
+	}
 private:
 	static allocator<string> alloc;
 	void free() {
