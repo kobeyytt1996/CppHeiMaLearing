@@ -170,16 +170,16 @@ int compare(const char* const& p1, const char* const& p2) {
 	return 0;
 }
 
-namespace std {
-	template<>
-	struct hash<Sales_data> {
-		typedef size_t return_type;
-		typedef Sales_data argument_type;
-		size_t operator()(const Sales_data &arg) {
-			return hash<unsigned>()(arg.units_sold);
-		}
-	};
-}
+//namespace std {
+//	template<>
+//	struct hash<Sales_data> {
+//		typedef size_t return_type;
+//		typedef Sales_data argument_type;
+//		size_t operator()(const Sales_data &arg) {
+//			return hash<unsigned>()(arg.units_sold);
+//		}
+//	};
+//}
 
 template<typename T> struct Foo1 {
 	void bar();
@@ -235,7 +235,7 @@ int main16() {
 
 	foo(43, "aa", 3.0);
 
-	unordered_multiset<Sales_data> SDSet;
+	//unordered_multiset<Sales_data> SDSet;
 
 	vector<const char *> vs{ "aa", "cc", "aa", "aa"};
 	cout << myCount(vs, "aa") << endl;
