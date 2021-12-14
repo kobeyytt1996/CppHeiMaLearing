@@ -200,7 +200,7 @@ size_t myCount(const vector<T>& vt, const T target) {
 	return count;
 }
 
-int main() {
+int main16() {
 	compare("hello", "yuan");
 	//compare(NoCompare(), NoCompare());
 

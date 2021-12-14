@@ -147,6 +147,7 @@
     <ClCompile Include="chapter14.cpp" />
     <ClCompile Include="chapter15.cpp" />
     <ClCompile Include="chapter16.cpp" />
+    <ClCompile Include="chapter17.cpp" />
     <ClCompile Include="chapter3.cpp" />
     <ClCompile Include="chapter4.cpp" />
     <ClCompile Include="chapter5.cpp" />
