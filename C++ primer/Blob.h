@@ -18,7 +18,12 @@ public:
 
 	Blob() : data(make_shared<vector<T>>()) {}
 
-	Blob(initializer_list<T> il) : data(make_shared<vector<T>>(vector<T>(il))) {}
+	Blob(initializer_list<T> il) try : data(make_shared<vector<T>>(vector<T>(il))) {
+	
+	}
+	catch (const bad_alloc& ba) {
+		cerr << ba.what() << endl;
+	}
 
 	template<typename It>
 	Blob(It s, It e);
