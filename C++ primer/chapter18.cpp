@@ -82,6 +82,9 @@ void A::f2(const A::C& c) {
 
 namespace std {
 	int i1 = 2;
+	class C {
+
+	};
 }
 
 void f1() {
@@ -92,7 +95,7 @@ void f1() {
 using std::move;
 
 
-int main() {
+int main18() {
 	C2 c2;
 	c2.cMem;
 	using std::move;

@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,6 +150,7 @@
     <ClCompile Include="chapter16.cpp" />
     <ClCompile Include="chapter17.cpp" />
     <ClCompile Include="chapter18.cpp" />
+    <ClCompile Include="chapter19.cpp" />
     <ClCompile Include="chapter3.cpp" />
     <ClCompile Include="chapter4.cpp" />
     <ClCompile Include="chapter5.cpp" />
@@ -156,6 +158,7 @@
     <ClCompile Include="chapter7.cpp" />
     <ClCompile Include="chapter8.cpp" />
     <ClCompile Include="chapter9.cpp" />
+    <ClCompile Include="example19.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="StrBlob.cpp" />
     <ClCompile Include="StrBlobPtr.cpp" />
@@ -164,6 +167,7 @@
     <ClInclude Include="Blob.h" />
     <ClInclude Include="BlobPtr.h" />
     <ClInclude Include="C:\Users\13718\Downloads\VisualStudio2012\6\make_plural.h" />
+    <ClInclude Include="example19.h" />
     <ClInclude Include="Message.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Quote.h" />

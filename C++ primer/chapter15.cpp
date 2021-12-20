@@ -37,6 +37,7 @@ struct D3 : D2 {
 
 class Base {
 public:
+	size_t base_size;
 	size_t size() const {}
 };
 
