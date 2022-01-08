@@ -2,6 +2,8 @@
 #include <vector>
 #include <algorithm>
 #include "Person.h"
+#include "Person1.h"
+#include "Date.h"
 using std::cout;
 using std::endl;
 using std::shared_ptr;
@@ -79,14 +81,14 @@ using Vec = vector<T, allocator<T>>;
 
 class PM;
 
-int main() {
+int main05() {
 	SpecialWindow sw;
 	Window* window = &sw;
 	window->onResize();
 
 	typedef vector<shared_ptr<SpecialWindow>> VPSW;
 
-	Person p;
+	auto pP1 = Person1::create(Date());
 
 	
 
