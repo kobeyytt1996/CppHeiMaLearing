@@ -14,6 +14,10 @@ using std::set;
 using std::swap;
 using widgetEnv::Widget;
 
+class PM {
+
+};
+
 class TestIL {
 public:
 	explicit TestIL(int i1, int i2) {

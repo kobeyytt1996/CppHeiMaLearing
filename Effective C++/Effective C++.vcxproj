@@ -140,14 +140,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="Person.cpp" />
     <ClCompile Include="test03.cpp" />
     <ClCompile Include="test1.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="test4.cpp" />
+    <ClCompile Include="test5.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="datefwd.h" />
     <ClInclude Include="Directory.h" />
     <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="PersonImpl.h" />
     <ClInclude Include="Widget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
