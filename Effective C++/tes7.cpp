@@ -3,6 +3,8 @@
 #include <boost/smart_ptr.hpp>
 #include <tuple>
 #include <iostream>
+#include <iterator>
+#include "Rational.hpp"
 using std::ostream;
 using std::tuple;
 using std::string;
@@ -12,6 +14,8 @@ using std::cout;
 using std::endl;
 using std::make_tuple;
 using std::get;
+using std::random_access_iterator_tag;
+using std::bidirectional_iterator_tag;
 
 template<typename Iterator>
 void workWithIter(Iterator it) {
@@ -123,7 +127,74 @@ ostream& operator<<(ostream& os, const tuple<Types...>& data) {
 	return os << ']';
 }
 
-int main() {
+template<typename T>
+class SmartPtr {
+public:
+	explicit SmartPtr(T* realPtr);
+
+	template<typename U>
+	SmartPtr(const SmartPtr<U>& other) : pT(other.get()) {}
+
+	SmartPtr(const SmartPtr& other);
+
+	template<typename U>
+	SmartPtr& operator=(const SmartPtr<U>& other) {
+		pT = other.get();
+		return *this;
+	}
+
+	T* get() const { return pT; }
+private:
+	T* pT;
+};
+
+template<typename T>
+struct My_trait {
+	typedef typename T::ic ic;
+};
+
+template<typename T>
+struct My_trait<T*> {
+	typedef random_access_iterator_tag ic;
+};
+
+template<typename Iter, typename Dist>
+void doAdvance(Iter& iter, Dist d, random_access_iterator_tag) {
+	cout << "ran" << endl;
+	iter += d;
+}
+
+template<typename Iter, typename Dist>
+void doAdvance(Iter& iter, Dist d, bidirectional_iterator_tag) {
+	cout << "bi" << endl;
+	if (d >= 0) {
+		while (d--) {
+			++iter;
+		}
+	}
+	else {
+		while (d++) {
+			--iter;
+		}
+	}
+}
+
+template<typename Iter, typename Dist>
+void advance(Iter& iter, Dist d) {
+	doAdvance(iter, d, typename My_trait<Iter>::ic());
+}
+
+template<unsigned n>
+struct factorial {
+	enum { value = n * factorial<n - 1>::value };
+};
+
+template<>
+struct factorial<1> {
+	enum {value = 1};
+};
+
+int main07() {
 	CA ca;
 	MsgInfo mi;
 
@@ -136,6 +207,14 @@ int main() {
 	sm.invert();
 
 	cout << make_tuple(10, 20, 'a') << endl;
+	Rational<int> r1, r2;
+	Rational<int> r3 = 5;
+	r1 * r2;
+	5 * r3;
+
+	int* pI = new int();
+	advance(pI, 5);
+	cout << factorial<5>::value << endl;
 
 	return 1;
 }

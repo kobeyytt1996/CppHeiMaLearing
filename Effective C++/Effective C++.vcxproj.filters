@@ -74,5 +74,8 @@
     <ClInclude Include="RealPerson.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Rational.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
