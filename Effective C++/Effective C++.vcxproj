@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="test9.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Person1.cpp" />
     <ClCompile Include="tes7.cpp" />
@@ -157,12 +158,14 @@
     <ClCompile Include="test4.cpp" />
     <ClCompile Include="test5.cpp" />
     <ClCompile Include="test6.cpp" />
+    <ClCompile Include="test8.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Date.h" />
     <ClInclude Include="datefwd.h" />
     <ClInclude Include="Directory.h" />
     <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="MyString.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Person1.h" />
     <ClInclude Include="PersonImpl.h" />
