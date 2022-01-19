@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 
+
 using std::tuple;
 using std::unordered_set;
 using std::hash;
@@ -10,6 +11,7 @@ using std::string;
 using std::cout;
 using std::endl;
 using std::allocator;
+using std::nothrow;
 
 int (*pf)(int x);
 
@@ -72,7 +74,62 @@ private:
 
 Screen* Screen::freeStore = nullptr;
 
-int main() {
+class MyAlloc {
+private:
+	struct obj {
+		obj* next;
+	};
+public:
+	void* allocate(size_t size) {
+		obj* p;
+		if (!freeStore) {
+			freeStore = p = static_cast<obj*>(malloc(size * CHUNK));
+			for (int i = 0; i < (CHUNK - 1); ++i) {
+				p->next = reinterpret_cast<obj*>(reinterpret_cast<char*>(p) + size);
+				p = p->next;
+			}
+			p->next = nullptr;
+		}
+		p = freeStore;
+		freeStore = p->next;
+		return p;
+	}
+	void deallocate(void* p, size_t) {
+		static_cast<obj*>(p)->next = freeStore;
+		freeStore = static_cast<obj*>(p);
+	}
+private:
+	obj* freeStore = nullptr;
+	const int CHUNK = 5;
+};
+
+class Goo {
+	static MyAlloc myAlloc;
+
+public:
+	static void* operator new(size_t size) {
+		if (size != sizeof(Goo)) {
+			return ::operator new(size);
+		}
+		return myAlloc.allocate(size);
+	}
+
+	static void operator delete(void* p, size_t size) {
+		if (size != sizeof(Goo)) {
+			return ::operator delete(p);
+		}
+		myAlloc.deallocate(p, size);
+	}
+};
+
+MyAlloc Goo::myAlloc;
+
+class NoNew {
+public:
+	static void* operator new(size_t size) = delete;
+};
+
+int main9() {
 	unordered_set<int>::iterator::iterator_category;
 	hash<float>()(3.2F);
 	cout << sizeof(tuple<int, double>) << endl;
@@ -96,6 +153,13 @@ int main() {
 
 	Screen* pS = new Screen;
 	delete pS;
+
+	Goo* pG = new Goo;
+	delete pG;
+
+	int* pI3 = new (nothrow) int;
+
+	
 
 	return 1;
 }

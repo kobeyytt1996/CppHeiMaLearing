@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="test10.cpp" />
     <ClCompile Include="test9.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Person1.cpp" />
